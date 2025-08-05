@@ -3,8 +3,7 @@ OpenStruc: Static Analysis of Two- and Three-dimensional Structures
 Version 1.0
 August 04, 2025
 
-![my OpenStruc logo](https://github.com/edgarfblack2Delete/OpenStruc/blob/main/src/OpenStrucLogo.jpg)
-
+![my OpenStruc logo](https://github.com/edgarfblacksilva/OpenStruc/blob/main/src/OpenStrucLogo.jpg)
 
 **OpenStruc** is a system for the static analysis of two- and three-dimensional structures. **OpenStruc** can be used to analyze several types of structures: plane trusses and frames, space trusses and frames, and grids -- plane structures with loads applied orthogonally to their plane. 
 
