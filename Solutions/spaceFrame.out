@@ -1,0 +1,81 @@
+	Structure Weaver & Gere book, Chapter 5, Space Frame Example 1, pages 354, 364-366
+	echo off
+
+                                                                           Page  1
+*************************************************************************
+* OpenStruc - Version 1.00                                              *
+* A program for the Static Analysis of Structures                       *
+* Programer: E.F.B.S.                                                   *
+*************************************************************************
+Weaver & Gere book Chapter 5 Space Frame Example 1 pages 354 364-366       Date: 08-05-2025      Time: 14:49:27
+    Number of Nodes:         4
+    Number of Elements:      3
+    Number of Materials:     1
+
+    Propeties of the meterials types
+    Type            E             G             Ct          Weight
+       1   2.0000e+08    8.0000e+07     2.0000e+00      3.0000e+00
+
+    Data of the Structure's Nodes
+    Joint #         X         Y         Z  Rdx Rdy Rdz Rrx Rry Rrz        Kdx        Kdy        Kdz        Krx        Kry        Krz
+          1     0.000     0.000     0.000   T   T   T   T   T   T  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+          2     0.000     3.000     0.000   F   F   F   F   F   F  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+          3     6.000     3.000     0.000   F   F   F   F   F   F  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+          4     9.000     0.000     3.000   T   T   T   T   T   T  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+
+    Data of the Structure's Elements
+    Element #  Joint I Joint J  Length       Area       Ixx        Iyy        Izz   Cixy   Cjxy    Cxy  Cixz   Cjxz    Cxz  Cn=Ct  Mat. Type
+        1         1       2       3.00  1.000E-02 2.000E-03  1.000E-03  1.000E-03   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+        2         2       3       6.00  1.000E-02 2.000E-03  1.000E-03  1.000E-03   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+        3         3       4       5.20  1.000E-02 2.000E-03  1.000E-03  1.000E-03   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+
+    Volumen:  0.142                 Structure Total Weight:     0.426                        Mean BandWidth: 3.750
+
+
+                                                                           Page  2
+*************************************************************************
+* OpenStruc - Version 1.00                                              *
+* A program for the Static Analysis of Structures                       *
+* Programer: E.F.B.S.                                                   *
+*************************************************************************
+Weaver & Gere book Chapter 5 Space Frame Example 1 pages 354 364-366       Date: 08-05-2025      Time: 14:49:27
+    First Load Case
+
+    LOADS APPLIED TO THE NODES
+    Node         Fx         Fy         Fz         Mx         My         Mz
+       2    120.000      0.000      0.000      0.000      0.000      0.000
+       3      0.000    -60.000      0.000      0.000      0.000   -180.000
+
+    LOADS AND TEMPERATURE VARIATIONS IN MEMBERS (local oXYZ system of reference).
+
+    Element     2         DTX =    0.000 DTY =   0.000 DTZ =   0.000
+    Npc = 1 Px =    0.000 Py =    0.000 Pz =  240.000 La  =    3.000
+
+    PRIMARY FORCES AT ELEMENTS ENDS
+    Element # Node             N           Vy           Vz            T           My           Mz
+          2      2        -0.000        0.000     -120.000       -0.000      180.000       -0.000
+                 3         0.000       -0.000      120.000        0.000      180.000        0.000
+
+    NODES DISPLACEMENTS
+    Node              Dx              Dy              Dz              Rx              Ry              Rz
+       1    0.000000E+00    0.000000E+00    0.000000E+00    0.000000E+00    0.000000E+00    0.000000E+00
+       2   -8.594097E-04    5.776353E-05    5.007645E-03    2.393332E-03   -1.623169E-03    6.813313E-04
+       3   -1.176053E-03    3.253162E-03    5.255517E-03    1.288428E-03    1.720936E-03   -7.714689E-04
+       4    0.000000E+00    0.000000E+00    0.000000E+00    0.000000E+00    0.000000E+00    0.000000E+00
+
+    FORCES AT ELEMENTS SECTIONS
+    Element  Node       x          N         Vy         Vz          T         My         Mz
+          1     1   0.000     38.509     14.452   -126.013    -86.569    348.575     23.744
+                2   3.000     38.509     14.452   -126.013    -86.569    -29.464     67.100
+          2     2   0.000   -105.548    -38.509   -126.013    -29.464     86.569     67.100
+                3   6.000   -105.548    -38.509    113.987    -29.464     50.491   -163.954
+          3     3   0.000   -183.623      9.192      5.967     21.404     46.703     32.181
+                4   5.196   -183.623      9.192      5.967     21.404     77.711     79.946
+
+    LOADS AND/OR REACTIONS AT NODES
+    Node          FX          FY          FZ          MX          MY          MZ
+       1    -14.4522    -38.5090   -126.0130   -348.5750     86.5690    -23.7438
+       2    120.0000     -0.0000     -0.0000     -0.0000      0.0000     -0.0000
+       3      0.0000    -60.0000     -0.0000      0.0000      0.0000   -180.0000
+       4   -105.5478     98.5090   -113.9870    -75.8979    -75.8082     37.1626
+Running Time: 0.00  sec. 

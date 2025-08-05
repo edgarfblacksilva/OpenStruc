@@ -1,0 +1,44 @@
+Structure Weaver & Gere book, Chapter 5, Space Frame Example 1, pages 354, 364-366
+echo off
+type space frame # sections 4
+
+shear deformation off
+number of nodes 4  
+number of element 3 
+number of materials 1 
+number of section_Types 1
+
+coordinates
+    1 0.000     0.000     0.000 support dx dy dz rx ry rz 
+    2 0.000     3.000     0.000
+    3 6.000     3.000     0.000
+    4 9.000     0.000     3.000 support dx dy dz  rz  rx ry
+
+incidences
+    1 1 2 
+    2 2 3 
+    3 3 4 
+
+materials
+    e 200.0e6 g 80.0e6 ct 2.0 weight 3.0 
+
+sectype
+    ar 0.01 Ix 2.0e-3 Iy 1.0e-3 Iz 1.0e-3 mt 1
+
+elements
+    all secType 1 
+    
+plot
+
+number of load_Cases 1
+loading case 1 "First Load Case"
+
+    loaded nodes
+    2 fx 120.0    
+    3 fy -60.0 mz -180.0
+    
+    loaded elements    
+    2
+    concentrated local   pz 240.0   la -0.5
+    solve
+stop

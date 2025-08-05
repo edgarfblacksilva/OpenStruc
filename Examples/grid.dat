@@ -1,0 +1,46 @@
+Structure Weaver & Gere book, Chapter 5, Grid Example 2, pages 342-345
+echo off
+type grid # sections 4
+shear deformation off
+number of nodes 6
+coordinates
+    1    0.0  0.0 support dz rx ry
+    2    6.0  0.0 
+    3   10.0  0.0 support dz rx ry
+    4   2.0   4.0 support dz rx ry
+    5   6.0   4.0
+    6   6.0   8.0 support dz rx ry
+    
+number of element 5
+incidences
+    1 1 2
+    2 2 3 
+    3 2 5
+    4 4 5
+    5 5 6
+    
+number of materials 1 
+materials
+   e 200.0e6  g 80.0e6 ct 2.0 weight 3.0
+
+number of section_Types 1
+sectype
+    Ix 2.0e-3  Iy  1.0e-3  mt 1
+
+elements
+    all secType 1 
+    #1-5 secType 1 
+    
+plot
+
+number of load_Cases 1 
+loading case 1 "First Load Case"
+    loaded nodes
+    2 fz 50.0  my 100.0    
+    loaded elements    
+    1  # parameters related to local temperature changes could follow here.
+    concentrated local  pz  -150.0 la -0.5 #concentrated global  pz  -150.0 la -0.5    
+    4  # parameters related to local temperature changes could follow here.
+    uniform local  wz -75.0   #uniform global  wz -75.0    
+    solve
+stop

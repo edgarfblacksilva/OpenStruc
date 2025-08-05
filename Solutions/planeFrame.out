@@ -1,0 +1,102 @@
+	Structure Weaver & Gere book, Chapter 5, Plane Frame Example, pages 337-339
+	echo off
+
+                                                                           Page  1
+*************************************************************************
+* OpenStruc - Version 1.00                                              *
+* A program for the Static Analysis of Structures                       *
+* Programer: E.F.B.S.                                                   *
+*************************************************************************
+Weaver & Gere book Chapter 5 Plane Frame Example pages 337-339       Date: 08-05-2025      Time: 14:48:59
+    Number of Nodes:         4
+    Number of Elements:      3
+    Number of Materials:     1
+
+    Propeties of the meterials types
+    Type            E             G             Ct          Weight
+       1   7.0000e+07    1.0000e+00     2.0000e+00      3.0000e+00
+
+    Data of the Structure's Nodes
+    Joint #         X         Y  Rdx Rdy Rrz        Kdx        Kdy        Krz
+          1     0.000     0.000   T   T   T  0.0000e+00 0.0000e+00 0.0000e+00
+          2     3.000     4.000   F   F   F  0.0000e+00 0.0000e+00 0.0000e+00
+          3     9.000     5.000   F   F   F  0.0000e+00 0.0000e+00 0.0000e+00
+          4    11.000     1.000   T   T   F  0.0000e+00 0.0000e+00 0.0000e+00
+
+    Data of the Structure's Elements
+    Element #  Joint I Joint J  Length       Area       Ixx        Iyy        Izz   Cixy   Cjxy    Cxy  Cixz   Cjxz    Cxz  Cn=Ct  Mat. Type
+        1         1       2       5.00  2.000E-02 0.000E+00  0.000E+00  3.000E-03   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+        2         2       3       6.08  2.000E-02 0.000E+00  0.000E+00  3.000E-03   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+        3         3       4       4.47  2.000E-02 0.000E+00  0.000E+00  3.000E-03   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+
+    Volumen:  0.311                 Structure Total Weight:     0.933                        Mean BandWidth: 2.667
+
+
+                                                                           Page  2
+*************************************************************************
+* OpenStruc - Version 1.00                                              *
+* A program for the Static Analysis of Structures                       *
+* Programer: E.F.B.S.                                                   *
+*************************************************************************
+Weaver & Gere book Chapter 5 Plane Frame Example pages 337-339       Date: 08-05-2025      Time: 14:48:59
+    First Load Case
+
+    LOADS APPLIED TO THE NODES
+    Node         Fx         Fy         Mz
+       2      0.000   -100.000      0.000
+       3    100.000    200.000   -150.000
+
+    LOADS AND TEMPERATURE VARIATIONS IN MEMBERS (local oXYZ system of reference).
+
+    Element     1         DTX =    0.000 DTY =   0.000 DTZ =   0.000
+    Npu = 1 Wx =    0.000 Wy =  -48.000 Wz =    0.000 La  =    0.000 Lb  =    5.000
+
+    PRIMARY FORCES AT ELEMENTS ENDS
+    Element # Node             N           Vy           Mz
+          1      1        -0.000      120.000     -100.000
+                 2         0.000     -120.000     -100.000
+
+    NODES DISPLACEMENTS
+    Node              Dx              Dy              Rz
+       1    0.000000E+00    0.000000E+00    0.000000E+00
+       2    7.367934E-03   -5.191992E-03   -1.335275E-04
+       3    6.410223E-03    3.420730E-03   -2.685053E-04
+       4    0.000000E+00    0.000000E+00   -2.301924E-03
+
+    FORCES AT ELEMENTS SECTIONS
+    Element  Node       x          N         Vy         Mz
+          1     1   0.000     74.807    294.903   -542.865
+                    1.250     74.807    234.903   -211.736
+                    2.500     74.807    174.903     44.392
+                    3.750     74.807    114.903    225.520
+                2   5.000     74.807     54.903    331.648
+          2     2   0.000    108.461   -110.577    331.648
+                    1.521    108.461   -110.577    163.494
+                    3.041    108.461   -110.577     -4.660
+                    4.562    108.461   -110.577   -172.814
+                3   6.083    108.461   -110.577   -340.968
+          3     3   0.000     60.373     42.702   -190.968
+                    1.118     60.373     42.702   -143.226
+                    2.236     60.373     42.702    -95.484
+                    3.354     60.373     42.702    -47.742
+                4   4.472     60.373     42.702     -0.000
+
+    LOADS AND/OR REACTIONS AT NODES
+    Node          FX          FY          MZ
+       1   -280.8061    117.0962    542.8646
+       2      0.0000   -100.0000     -0.0000
+       3    100.0000    200.0000   -150.0000
+
+                                                                           Page  3
+*************************************************************************
+* OpenStruc - Version 1.00                                              *
+* A program for the Static Analysis of Structures                       *
+* Programer: E.F.B.S.                                                   *
+*************************************************************************
+Weaver & Gere book Chapter 5 Plane Frame Example pages 337-339       Date: 08-05-2025      Time: 14:48:59
+First Load Case
+
+    LOADS AND/OR REACTIONS AT NODES
+    Node          FX          FY          MZ
+       4    -11.1939    -73.0962     -0.0000
+Running Time: 0.00  sec. 
