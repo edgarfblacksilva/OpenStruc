@@ -11,7 +11,7 @@ August 21, 2025
 
 **OpenStruc** includes a plotting subsystem that utilizes a slightly modified version of the header file "matplotlibcpp.h" from the **matplotlib-cpp** project (See https://github.com/lava/matplotlib-cpp). **matplotlib-cpp** resembles the plotting API used by Matlab and matplotlib. Therefore, please be sure that your computer has a working **Python** system with the numpy and matplotlib libraries installed.
 
-**OpenStruc** has been compiled and testsed in Linux (Linux Mint 22.1) and the following C++ compilers:
+**OpenStruc** has been compiled and tested in Linux (Linux Mint 22.1) and the following C++ compilers:
   - g++ 13.3.0-6ubuntu2~24.04
   - icpx Intel(R) oneAPI DPC++/C++ Compiler 2025.1.1 (2025.1.1.20250418)
   - Nvidia nvc++ 25.5-0 64-bit target on x86-64 Linux -tp haswell
