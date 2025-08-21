@@ -1,0 +1,108 @@
+	Structure Weaver & Gere book, Chapter 5, Grid Example 2, pages 342-345
+	echo off
+
+                                                                           Page  1
+*************************************************************************
+* OpenStruc - Version 1.00                                              *
+* A program for the Static Analysis of Structures                       *
+* Programer: E.F.B.S.                                                   *
+*************************************************************************
+Weaver & Gere book Chapter 5 Grid Example 2 pages 342-345       Date: 08-05-2025      Time: 14:48:45
+    Number of Nodes:         6
+    Number of Elements:      5
+    Number of Materials:     1
+
+    Propeties of the meterials types
+    Type            E             G             Ct          Weight
+       1   2.0000e+08    8.0000e+07     2.0000e+00      3.0000e+00
+
+    Data of the Structure's Nodes
+    Joint #         X         Y  Rdz Rrx Rry        Kdz        Krx        Kry
+          1     0.000     0.000   T   T   T  0.0000e+00 0.0000e+00 0.0000e+00
+          2     6.000     0.000   F   F   F  0.0000e+00 0.0000e+00 0.0000e+00
+          3    10.000     0.000   T   T   T  0.0000e+00 0.0000e+00 0.0000e+00
+          4     2.000     4.000   T   T   T  0.0000e+00 0.0000e+00 0.0000e+00
+          5     6.000     4.000   F   F   F  0.0000e+00 0.0000e+00 0.0000e+00
+          6     6.000     8.000   T   T   T  0.0000e+00 0.0000e+00 0.0000e+00
+
+    Data of the Structure's Elements
+    Element #  Joint I Joint J  Length       Area       Ixx        Iyy        Izz   Cixy   Cjxy    Cxy  Cixz   Cjxz    Cxz  Cn=Ct  Mat. Type
+        1         1       2       6.00  0.000E+00 2.000E-03  1.000E-03  0.000E+00   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+        2         2       3       4.00  0.000E+00 2.000E-03  1.000E-03  0.000E+00   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+        3         2       5       4.00  0.000E+00 2.000E-03  1.000E-03  0.000E+00   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+        4         4       5       4.00  0.000E+00 2.000E-03  1.000E-03  0.000E+00   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+        5         5       6       4.00  0.000E+00 2.000E-03  1.000E-03  0.000E+00   4.00   4.00   2.00  4.00   4.00   2.00   1.00      1
+
+    Volumen:  0.000                 Structure Total Weight:     0.000                        Mean BandWidth: 2.833
+
+
+                                                                           Page  2
+*************************************************************************
+* OpenStruc - Version 1.00                                              *
+* A program for the Static Analysis of Structures                       *
+* Programer: E.F.B.S.                                                   *
+*************************************************************************
+Weaver & Gere book Chapter 5 Grid Example 2 pages 342-345       Date: 08-05-2025      Time: 14:48:45
+    First Load Case
+
+    LOADS APPLIED TO THE NODES
+    Node         Fz         Mx         My
+       2     50.000      0.000    100.000
+
+    LOADS AND TEMPERATURE VARIATIONS IN MEMBERS (local oXYZ system of reference).
+
+    Element     1         DTX =    0.000 DTY =   0.000 DTZ =   0.000
+    Npc = 1 Px =    0.000 Py =    0.000 Pz = -150.000 La  =    3.000
+
+
+    Element     4         DTX =    0.000 DTY =   0.000 DTZ =   0.000
+    Npu = 1 Wx =    0.000 Wy =    0.000 Wz =  -75.000 La  =    0.000 Lb  =    4.000
+
+    PRIMARY FORCES AT ELEMENTS ENDS
+    Element # Node            Fz           Mx           My
+          1      1        75.000       -0.000     -112.500
+                 2       -75.000        0.000     -112.500
+          4      4       150.000       -0.000     -100.000
+                 5      -150.000        0.000     -100.000
+
+    NODES DISPLACEMENTS
+    Node              Dz              Rx              Ry
+       1    0.000000E+00    0.000000E+00    0.000000E+00
+       2   -1.218248E-03   -3.559946E-04   -1.497583E-04
+       3    0.000000E+00    0.000000E+00    0.000000E+00
+       4    0.000000E+00    0.000000E+00    0.000000E+00
+       5   -2.099255E-03    2.885637E-04    1.837634E-04
+       6    0.000000E+00    0.000000E+00    0.000000E+00
+
+    FORCES AT ELEMENTS SECTIONS
+    Element  Node       x         Fz         Mx         My
+          1     1   0.000     93.528     -9.493   -163.092
+                2   6.000    -56.472     -9.493    -51.924
+          2     2   0.000    -34.452     14.240     61.417
+                3   4.000    -34.452     14.240    -76.393
+          3     2   0.000     27.980     13.341    -23.733
+                5   4.000     27.980     13.341     88.189
+          4     4   0.000    214.940     11.543   -239.068
+                5   4.000    -85.060     11.543     20.691
+          5     5   0.000    -57.080     -7.351     99.731
+                6   4.000    -57.080     -7.351   -128.588
+
+
+                                                                           Page  3
+*************************************************************************
+* OpenStruc - Version 1.00                                              *
+* A program for the Static Analysis of Structures                       *
+* Programer: E.F.B.S.                                                   *
+*************************************************************************
+Weaver & Gere book Chapter 5 Grid Example 2 pages 342-345       Date: 08-05-2025      Time: 14:48:45
+First Load Case
+
+    LOADS AND/OR REACTIONS AT NODES
+    Node          FZ          MX          MY
+       1     93.5280      9.4932   -163.0921
+       2     50.0000      0.0000    100.0000
+       3     34.4524     14.2398     76.3927
+       4    214.9398    -11.5425   -239.0678
+       5     -0.0000      0.0000     -0.0000
+       6     57.0798   -128.5877     -7.3505
+Running Time: 0.00  sec. 

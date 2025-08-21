@@ -1,0 +1,51 @@
+Structure Weaver & Gere book, Chapter 5, Plane Truss Example, pages 330-331
+echo off
+type plane truss # sections 4
+number of nodes 4 element 6 materials 1 Section_Types 3 load_Cases 1
+coordinates
+    1  0.0 80.0
+    2 60.0 80.0
+    3  0.0  0.0 support dx dy
+    4 60.0  0.0 support dx dy
+incidences
+    1 1 2 
+    2 3 4
+    3 3 1
+    4 4 2 
+    5 1 4
+    6 3 2
+materials
+   e 10000 g 1.0 ct 6.5e-6 weight 0.2836  # this is material 1
+SecType
+    ar  6.0                               # this is SecType 1
+    ar  8.0                               # this is SecType 2
+    ar 10.0 mt 1                          # this is SecType 3
+elements
+    1 2         SecType 1                 # Elements 1 and 2 use SecType 1
+    3-4         SecType 2                 # Elements 3 and 4 use SecType 2
+    5 to 6 by 1 SecType 3                 # Elements 5 and 6 use SecType 3
+plot
+loading case 1 "First Load Case"   
+
+    loaded nodes 
+    2 fx 20.0  fy 10.0
+    
+    loaded elements 
+    1  # parameters related to local temperature changes could follow here.
+    #couple local   mz -1200.0 la 30.0
+    couple local   mz -1200.0 la -0.5
+
+    2  # parameters related to local temperature changes could follow here.
+    #concentrated local  py -20.0  la 30.0 
+    concentrated global  py -20.0  la -0.5    
+    
+    3  # parameters related to local temperature changes could follow here.
+    #uniform local wy -0.25 la 0.0 lb -1.0
+    uniform global wx 0.25 
+    
+    4  # parameters related to local temperature changes could follow here.
+    #concentrated local  px -10.0 py -10.0  la 40.0
+    concentrated global px 10.0 py -10.0  la -0.5
+    
+    solve
+stop
