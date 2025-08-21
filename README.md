@@ -9,6 +9,8 @@ August 04, 2025
 
 **OpenStruc** is written entirely in C++. At its core, **OpenStruc** uses a direct solver algorithm based on Gauss Elimination, including a variation of the *Active Column Solution* method.
 
+**OpenStruc** includes a plotting subsystem that utilizes a header file "matplotlibcpp.h" from the **matplotlib-cpp** project (See https://github.com/lava/matplotlib-cpp). **matplotlib-cpp** resembles the plotting API used by Matlab and matplotlib. Therefore, be sure to have an operating **python** system, and the **numpy** and **matplotlib** libraries installed.
+
 Welcome to **OpenStruc**. Thank you for using it! 
 
 
@@ -16,8 +18,8 @@ Welcome to **OpenStruc**. Thank you for using it!
 
 - `C++ compiler`
 - `cmake`
-- `python, numpy, matplotlib `
-- `matplotlibcpp.h` (See https://github.com/lava/matplotlib-cpp)
+- `python, numpy, matplotlib`
+- `matplotlibcpp.h` 
 
 # Build Instructions
 
