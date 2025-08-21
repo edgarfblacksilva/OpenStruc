@@ -56,6 +56,6 @@ For extended instruction on how to run **OpenStruc**, take a look at the *user_G
 
 
 # Check your solution
-In the Solutions directory, you will find an output file for each of the input files located in the Examples directory.
+In the `Solutions` directory, you will find an output file for each of the input files located in the Examples directory.
 
 
