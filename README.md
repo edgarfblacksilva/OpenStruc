@@ -19,7 +19,6 @@ August 21, 2025
 **OpenStruc** has also compiled and tested in Mac OSX using the clang++ compiler. Thank to Brock Angelo for his assistant with the OSX implementation.
 
 Please, take a look at the `user_Guide_OpenStruc.pdf` document for a quick overview of basic commands that will allow you to start analyzing structures quickly.
-sdasd
 
 Welcome to **OpenStruc**. Thank you for using it! 
 
