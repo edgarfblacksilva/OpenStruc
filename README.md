@@ -17,7 +17,7 @@ Welcome to **OpenStruc**. Thank you for using it!
 - `C++ compiler`
 - `cmake`
 - `python, numpy, matplotlib `
-- `matplotlibcpp.h`
+- `matplotlibcpp.h` (See https://github.com/lava/matplotlib-cpp)
 
 # Build Instructions
 
