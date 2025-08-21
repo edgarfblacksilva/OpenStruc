@@ -5,7 +5,7 @@ August 21, 2025
 
 ![my OpenStruc logo](https://github.com/edgarfblacksilva/OpenStruc/blob/main/src/OpenStrucLogo.jpg)
 
-**OpenStruc** is a computer program for the static analysis of two- and three-dimensional structures. **OpenStruc** can be used to analyze several types of structures: plane trusses and frames, space trusses and frames, and grids -- plane structures with loads applied orthogonally to their plane. 
+**OpenStruc** is a computer program for the static analysis of two- and three-dimensional structures. **OpenStruc** can be used to analyze five types of structures: plane trusses and plane frames, space trusses and space frames, and plane structures with loads applied orthogonally to their plane (grids). 
 
 **OpenStruc** is written entirely in C++. At its core, **OpenStruc** uses a direct solver algorithm based on Gauss Elimination, including a variation of the *Active Column Solution* method.
 
