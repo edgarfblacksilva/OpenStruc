@@ -1,7 +1,7 @@
 # OpenStruc:
 OpenStruc: Static Analysis of Two- and Three-dimensional Structures
 Version 1.0
-August 04, 2025
+August 21, 2025
 
 ![my OpenStruc logo](https://github.com/edgarfblacksilva/OpenStruc/blob/main/src/OpenStrucLogo.jpg)
 
