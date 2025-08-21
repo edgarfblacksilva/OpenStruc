@@ -16,8 +16,8 @@ Welcome to **OpenStruc**. Thank you for using it!
 
 - `C++ compiler`
 - `cmake`
-- `gnuplot`
-- `libgnuplot-iostream-dev`
+- `python, numpy, matplotlib `
+- `matplotlibcpp.h`
 
 # Build Instructions
 
