@@ -28,7 +28,7 @@ endif ( )
 ## end of adding the following lines while cleaning the code
 
 find_package(Python3 COMPONENTS Interpreter Development )
-find_package(Python 3.12 REQUIRED COMPONENTS Interpreter Development.Module NumPy)
+find_package(Python 3.9 REQUIRED COMPONENTS Interpreter Development.Module NumPy)
 
 
 add_subdirectory(src)
